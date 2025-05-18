@@ -8,7 +8,7 @@ const routes = [
     { path: '/', component: HomeView },
     { path: '/search', component: SearchView },
     { path: '/load', component: LoaderView },
-    {path: '/:patWatch(.*)*', name: 'NotFound', component: NotFoundView},
+    { path: '/:patWatch(.*)*', component: NotFoundView },
 ]
 
 const router = createRouter({

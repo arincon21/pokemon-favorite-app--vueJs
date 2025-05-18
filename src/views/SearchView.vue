@@ -80,7 +80,6 @@ onMounted(async () => {
 })
 </script>
 
-
 <template>
 	<div class="p-12 bg-background min-h-screen justify-center md:flex">
 		<div class="flex flex-col gap-8 md:min-w-[570px] mb-[90px]">
@@ -96,8 +95,6 @@ onMounted(async () => {
 		<Button text="Favorites" :icon="IconFavorite" :minWidth="true" :secondary="!showOnlyFavorites"
 			@click="showFavoritesOnly" />
 	</NavBar>
-
 	<ModalPokemonInfo :isOpen="showModal" :selectedPokemon="selectedPokemon" @close="showModal = false"
 		@toggle-favorite="onItemClickFavorite(selectedPokemon)" />
-
 </template>

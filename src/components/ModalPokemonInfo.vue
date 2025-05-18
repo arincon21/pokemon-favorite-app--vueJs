@@ -26,7 +26,7 @@ const copyToClipboard = async (text) => {
 	try {
 		await navigator.clipboard.writeText(textCopy)
 		TextButton.value = 'Copied to clipboard!'
-		setTimeout(()=>{
+		setTimeout(() => {
 			TextButton.value = 'Share to my friends'
 		}, 2000)
 	} catch (err) {

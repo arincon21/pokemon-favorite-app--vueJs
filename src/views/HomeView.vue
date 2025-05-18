@@ -1,5 +1,5 @@
 <script setup>
-	import Button from "../components/Button.vue"
+import Button from "../components/Button.vue"
 </script>
 
 <template>
@@ -11,10 +11,7 @@
 		<h3 class="max-w-[500px] text-center text-textColor">
 			The digital encyclopedia created by Professor Oak is an invaluable tool to Trainers in the Pokémon world.
 		</h3>
-		<Button 
-			text="Get started" 
-			to="/load" 
-		></Button>
+		<Button text="Get started" to="/load"></Button>
 	</div>
 
 </template>

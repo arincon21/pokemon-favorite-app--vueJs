@@ -1,4 +1,3 @@
-// src/stores/pokemonStore.js
 import { defineStore } from 'pinia'
 import { getAllPokemon } from '../services/pokemonService'
 
@@ -17,5 +16,5 @@ export const usePokemonStore = defineStore('pokemon', {
             }
         }
     },
-    persist: true // ¡Esto activa la persistencia!
+    persist: true
 })

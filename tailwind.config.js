@@ -4,11 +4,11 @@ export default {
     './index.html',
     './src/**/*.{vue,js,ts,jsx,tsx}',
   ],
-    theme: {
+  theme: {
     extend: {
       colors: {
-        primaryButton: '#F22539',  
-        primaryButtonHover: '#C00E20',  
+        primaryButton: '#F22539',
+        primaryButtonHover: '#C00E20',
         secondaryButton: '#BFBFBF',
         buttonText: '#ffffff',
         background: '#F9F9F9',
@@ -17,7 +17,7 @@ export default {
         textColor: '#5E5E5E',
         textColorTitle: '#353535',
       },
-       borderRadius: {
+      borderRadius: {
         'general': '5px',
       },
       boxShadow: {
