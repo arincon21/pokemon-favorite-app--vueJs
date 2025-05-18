@@ -42,11 +42,11 @@ function handleClick() {
 </script>
 
 <template>
-	<button class="flex text-white items-center h-[44px] justify-center gap-2 px-4 py-2 rounded-full transition font-medium" 
+	<button class="flex text-buttonText items-center h-[44px] justify-center gap-2 px-4 py-2 rounded-full transition font-medium" 
 	:class="[
 		secondary
-			? 'bg-[#BFBFBF]  hover:bg-[#BFBFBF]'
-			: 'bg-[#F22539]  hover:bg-[#C00E20]',
+			? 'bg-secondaryButton'
+			: 'bg-primaryButton  hover:bg-primaryButtonHover',
 		minWidth
 			? 'md:min-w-[275px] min-w-[150px]'
 			: ''

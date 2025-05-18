@@ -3,12 +3,12 @@
 </script>
 
 <template>
-	<div class="flex justify-center items-center flex-col gap-[30px] px-12 py-12 bg-[#F9F9F9] h-screen">
+	<div class="flex justify-center items-center flex-col gap-[30px] px-12 py-12 bg-background h-screen">
 		<div class="banner h-[288px] w-[325px]"></div>
-		<h1 class="text-2xl font-bold text-[#353535]">
+		<h1 class="text-2xl font-bold text-textColorTitle">
 			Welcome to Pokédex
 		</h1>
-		<h3 class="max-w-[500px] text-center text-[#5E5E5E]">
+		<h3 class="max-w-[500px] text-center text-textColor">
 			The digital encyclopedia created by Professor Oak is an invaluable tool to Trainers in the Pokémon world.
 		</h3>
 		<Button 

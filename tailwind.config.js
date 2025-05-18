@@ -6,6 +6,20 @@ export default {
   ],
     theme: {
     extend: {
+      colors: {
+        primaryButton: '#F22539',  
+        primaryButtonHover: '#C00E20',  
+        secondaryButton: '#BFBFBF',
+        buttonText: '#ffffff',
+        background: '#F9F9F9',
+        backgroundSecondary: '#FFFFFF',
+        backgroundNav: '#FFFFFF',
+        textColor: '#5E5E5E',
+        textColorTitle: '#353535',
+      },
+       borderRadius: {
+        'general': '5px',
+      },
       keyframes: {
         wiggle: {
           '0%, 100%': { transform: 'translateX(0) rotate(0deg)' },

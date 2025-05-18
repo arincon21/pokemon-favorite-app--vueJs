@@ -82,7 +82,7 @@ onMounted(async () => {
 
 
 <template>
-	<div class="p-12 bg-[#F9F9F9] min-h-screen justify-center md:flex">
+	<div class="p-12 bg-background min-h-screen justify-center md:flex">
 		<div class="flex flex-col gap-8 md:min-w-[570px] mb-[90px]">
 			<Input placeholder="Search" :icon="IconSearch" :onInput="handleTyping" />
 			<Loader v-if="loader"></Loader>

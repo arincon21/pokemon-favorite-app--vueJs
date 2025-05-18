@@ -37,22 +37,22 @@ const copyToClipboard = async (text) => {
 
 <template>
 	<Modal :isOpen="isOpen" @close="$emit('close')">
-		<div class="bannerModal h-[220px] w-auto rounded-t-lg flex items-center justify-center">
+		<div class="bannerModal h-[220px] w-auto rounded-t-general flex items-center justify-center">
 			<img :src="selectedPokemon.sprite" alt="pokemon-sprite" class="h-[220px] w-auto" />
 		</div>
 		<div class="px-8 py-2">
 			<p
-				class="h-[50px] flex capitalize gap-2 items-center border border-transparent border-b-[#E8E8E8] text-[#5E5E5E]">
+				class="h-[50px] flex capitalize gap-2 items-center border border-transparent border-b-[#E8E8E8] text-textColor">
 				<b>Name:</b> {{ selectedPokemon.name }}
 			</p>
-			<div class="h-[50px] flex gap-2 items-center border border-transparent border-b-[#E8E8E8] text-[#5E5E5E]">
+			<div class="h-[50px] flex gap-2 items-center border border-transparent border-b-[#E8E8E8] text-textColor">
 				<b>Weight:</b> {{ selectedPokemon.weight }}
 			</div>
-			<div class="h-[50px] flex gap-2 items-center border border-transparent border-b-[#E8E8E8] text-[#5E5E5E]">
+			<div class="h-[50px] flex gap-2 items-center border border-transparent border-b-[#E8E8E8] text-textColor">
 				<b>Height:</b> {{ selectedPokemon.height }}
 			</div>
 			<div
-				class="h-[50px] border capitalize flex gap-2 items-center border-transparent border-b-[#E8E8E8] text-[#5E5E5E]">
+				class="h-[50px] border capitalize flex gap-2 items-center border-transparent border-b-[#E8E8E8] text-textColor">
 				<b>Types:</b> {{ selectedPokemon.types.join(', ') }}
 			</div>
 		</div>

@@ -35,11 +35,11 @@ function toggleFavorite(item) {
 <template>
 	<div class="space-y-3" v-if="items.length > 0">
 		<div v-for="(item, index)  in props.items" :key="item.id"
-			class="flex items-center justify-between bg-white p-4 h-[60px] rounded shadow-sm hover:shadow-md transition cursor-pointer"
+			class="flex items-center justify-between bg-backgroundSecondary p-4 h-[60px] rounded-general shadow-sm hover:shadow-md transition cursor-pointer"
 			@click="handleItemClick(item, index)">
-			<span class="text-[22px] font-medium text-[#353535] capitalize">{{ item.name }}</span>
+			<span class="text-[22px] font-medium text-textColorTitle capitalize">{{ item.name }}</span>
 			<button @click.stop="toggleFavorite(item)"
-				class="w-[44px] h-[44px] rounded-full flex items-center justify-center bg-[#F5F5F5] transition"
+				class="w-[44px] h-[44px] rounded-full flex items-center justify-center bg-background transition"
 				:aria-label="`Toggle favorite for ${item.name}`">
 				<img :src="item.favorite ? IconStarOn : IconStarOff" alt="icon-star" class="h-[26px] w-[26px]" />
 			</button>
