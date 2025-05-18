@@ -63,8 +63,8 @@ function showFavoritesOnly() {
 	showOnlyFavorites.value = true
 }
 
-function onItemClickFavorite(indexListPokemon, fullData) {
-	pokemonStore.toggleFavorite(indexListPokemon)
+function onItemClickFavorite(fullData) {
+	pokemonStore.toggleFavorite(fullData.name)
 
 	if (fullData && selectedPokemon.id === fullData.id) {
 		selectedPokemon.favorite = !selectedPokemon.favorite
@@ -98,6 +98,6 @@ onMounted(async () => {
 	</NavBar>
 
 	<ModalPokemonInfo :isOpen="showModal" :selectedPokemon="selectedPokemon" @close="showModal = false"
-		@toggle-favorite="onItemClickFavorite(selectedPokemon.index, selectedPokemon)" />
+		@toggle-favorite="onItemClickFavorite(selectedPokemon)" />
 
 </template>

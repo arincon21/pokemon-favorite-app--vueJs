@@ -38,7 +38,7 @@ function toggleFavorite(item) {
 			class="flex items-center justify-between bg-white p-4 h-[60px] rounded shadow-sm hover:shadow-md transition cursor-pointer"
 			@click="handleItemClick(item, index)">
 			<span class="text-[22px] font-medium text-[#353535] capitalize">{{ item.name }}</span>
-			<button @click.stop="toggleFavorite(index)"
+			<button @click.stop="toggleFavorite(item)"
 				class="w-[44px] h-[44px] rounded-full flex items-center justify-center bg-[#F5F5F5] transition"
 				:aria-label="`Toggle favorite for ${item.name}`">
 				<img :src="item.favorite ? IconStarOn : IconStarOff" alt="icon-star" class="h-[26px] w-[26px]" />

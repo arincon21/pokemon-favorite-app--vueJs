@@ -10,11 +10,12 @@ export const usePokemonStore = defineStore('pokemon', {
         async fetchPokemons() {
             this.pokemons = await getAllPokemon()
         },
-        toggleFavorite(index) {
+        toggleFavorite(name) {
+            const index = this.pokemons.findIndex(p => p.name === name)
             if (index !== -1) {
                 this.pokemons[index].favorite = !this.pokemons[index].favorite
             }
         }
     },
-    persist: true
+    persist: true // ¡Esto activa la persistencia!
 })
