@@ -8,7 +8,7 @@ Una aplicación web estilo Pokédex construida con **Vue 3**, **Vite**, y **Tail
 - [Vite](https://vitejs.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Pinia](https://pinia.vuejs.org/) – para manejo de estado
-- [Vitest](https://vitest.dev/) – para pruebas unitararias axios
+- [Vitest](https://vitest.dev/) – para pruebas unitararias
 - [Axios](https://axios-http.com/es/docs/intro) –  Cliente HTTP basado en promesas para node.js
 
 ## 📦 Instalación
