@@ -35,7 +35,7 @@ function toggleFavorite(item) {
 <template>
 	<div class="space-y-3" v-if="items.length > 0">
 		<div v-for="(item, index)  in props.items" :key="item.id"
-			class="flex items-center justify-between bg-backgroundSecondary p-4 h-[60px] rounded-general shadow-sm hover:shadow-md transition cursor-pointer"
+			class="flex items-center justify-between bg-backgroundSecondary p-4 h-[60px] rounded-general shadow-general transition cursor-pointer"
 			@click="handleItemClick(item, index)">
 			<span class="text-[22px] font-medium text-textColorTitle capitalize">{{ item.name }}</span>
 			<button @click.stop="toggleFavorite(item)"

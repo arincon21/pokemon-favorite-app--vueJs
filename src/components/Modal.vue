@@ -32,7 +32,7 @@ function handleOverlayClick(event) {
 			class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-6"
 			@click="handleOverlayClick"
 		>
-			<div class="bg-backgroundSecondary rounded-general shadow-lg w-[570px] h-[506px] relative">
+			<div class="bg-backgroundSecondary rounded-general shadow-general w-[570px] h-[506px] relative">
 				<button 
 					@click="$emit('close')"
 					class="absolute top-3 right-3 text-gray-500 hover:text-gray-700"

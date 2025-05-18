@@ -20,6 +20,10 @@ export default {
        borderRadius: {
         'general': '5px',
       },
+      boxShadow: {
+        general: '0px 0px 18px -8px rgba(0, 0, 0, 0.1)',
+        nav: '0px -9px 18px -3px rgba(0, 0, 0, 0.1)'
+      },
       keyframes: {
         wiggle: {
           '0%, 100%': { transform: 'translateX(0) rotate(0deg)' },

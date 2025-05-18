@@ -30,7 +30,7 @@ function handleInput(event) {
 </script>
 
 <template>
-    <div class="flex items-center rounded-general px-4 py-1 gap-2 w-full h-[50px] shadow-sm bg-backgroundSecondary">
+    <div class="flex items-center rounded-general px-4 py-1 gap-2 w-full h-[50px] shadow-general bg-backgroundSecondary">
         <template v-if="props.icon">
             <img v-if="typeof props.icon === 'string'" :src="props.icon" alt="icon" class="w-5 h-5" />
             <component v-else :is="props.icon" class="w-5 h-5" />
