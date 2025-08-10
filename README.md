@@ -81,6 +81,11 @@ Esto iniciará el servidor en `http://localhost:5173` por defecto.
 
 Este proyecto está bajo la licencia MIT.
 
+## 🔗 Links
+
+- [Deploy](https://arincon21.github.io/pokemon-favorite-app--vueJs/)
+- [Figma](https://www.figma.com/design/RxextQHeFs98SQKdpTrahk/Pok%C3%A9dex?node-id=0-1&p=f&t=CkWZXC6dywKRz3Nm-0)
+
 ---
 
 ¡Gracias por usar esta Pokédex! 💖
